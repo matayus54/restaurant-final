@@ -1,0 +1,26 @@
+{
+    "openapi": "3.0.1",
+    "info": {
+        "title":"Mi academlo restaurant",
+        "version": "1.0.0"
+    },
+    "paths":{
+        "/api/v1/users":{
+            "get":{
+                "description": "Hacer un get de mis usuarios",
+                "tags": ["Users"],
+                "security":[
+                    {
+                        "jwt_token":[]
+                    }
+                ],
+                "responses":{
+                    "200":{
+                        "description": "Optener todos los usuarios"
+                    }
+                }
+            }
+
+        }
+    }
+}
